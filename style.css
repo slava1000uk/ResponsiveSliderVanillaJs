@@ -1,0 +1,63 @@
+.container {
+  background-color: lightslategrey;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  position: relative;
+}
+
+h1 {
+  color: white;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.slider {
+  border: 2px solid white;
+  border-radius: 5px;
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 0.5s;
+}
+
+
+
+img {
+  /* width: 264px; */
+  height: 100%;
+}
+.btn__container {
+  width: 80px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.control {
+  font-size: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  position: relative;
+}
+
+.control:hover {
+  background-color:lawngreen;
+}
+
+.control:active {
+  background-color:green;
+}
