@@ -28,22 +28,21 @@ window.addEventListener('resize', function () {
 });
 
 document.querySelector('.control.previous').addEventListener('click', function () {
-  if (count > 0) {
-    count--;
-    moveSlider();
-  } else {
+  count--;
+  if (count < 0) {
     count = imgs.length - 1;
-    moveSlider();
-  }
+  } 
+
+  moveSlider();
 })
 
 document.querySelector('.control.next').addEventListener('click', function () {
-  if (count < imgs.length - 1) {
-    count++;
-    moveSlider();
-  } else {
+  count++;
+  
+  if (count > imgs.length - 1) {
     count = 0;
-    moveSlider();
-  }
+  } 
+
+  moveSlider();
 
 })
